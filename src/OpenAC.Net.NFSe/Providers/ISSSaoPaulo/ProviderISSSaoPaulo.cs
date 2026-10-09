@@ -193,6 +193,7 @@ internal sealed class ProviderISSSaoPaulo : ProviderBase
                 FinalidadeNFSe = ibsCbs.ElementAnyNs("finNFSe")?.GetValue<string>(),
                 IndicadorFinal = ibsCbs.ElementAnyNs("indFinal")?.GetValue<string>(),
                 CodigoIndicadorOperacao = ibsCbs.ElementAnyNs("cIndOp")?.GetValue<string>(),
+                TipoOperacao = ibsCbs.ElementAnyNs("tpOper")?.GetValue<string>(),
                 IndicadorDestinatario = ibsCbs.ElementAnyNs("indDest")?.GetValue<string>()
             };
             ret.Servico.Valores.IBSCBS.Valores.Tributos.SituacaoClassificacao.CodigoClassificacaoTributaria =
